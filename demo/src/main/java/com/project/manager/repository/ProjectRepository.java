@@ -1,11 +1,11 @@
 package com.project.manager.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 import com.project.manager.entity.Project;
 
-@Repository
+@EnableJpaRepositories
 public interface ProjectRepository extends JpaRepository<Project, Integer>{
 
 }
